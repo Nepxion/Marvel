@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Class-Path: cots/twaver.jar cots/twavergis.jar cots/layouter.jar

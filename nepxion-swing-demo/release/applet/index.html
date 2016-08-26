@@ -1,0 +1,20 @@
+<html>
+<title>Nepxion Swing</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<script language="javascript" type="text/javascript">
+  function showApplet()
+  {
+    var appletWindow = window.open("nepxion.html", "", "fullscreen = no, menubar = no, toolbar = no, directories = no, location = no, status = no, scrollbars = no, resizable = yes");                   
+    appletWindow.moveTo(0, 0);
+    appletWindow.resizeTo(screen.availWidth, screen.availHeight);
+    
+    window.opener = null;          
+    window.open('', '_self');
+    window.close();
+  }
+</script>
+</head>
+<body onload="javascript:showApplet()">
+</body>
+</html>

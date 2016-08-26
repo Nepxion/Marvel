@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/**|**/CVS/**|**/Thumbs.db" kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="Nepxion-Utility/lib/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**/.svn/**|**/CVS/**|**/Thumbs.db" kind="src" path="locale"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-3-3.0-beta.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/http-client-4.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/http-core-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/jacob-1.15.jar"/>
+	<classpathentry kind="lib" path="lib/jdom-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/json.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/nepxion-util.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc14-10g.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-0.9.1.jar"/>
+	<classpathentry kind="lib" path="lib/proxool-cglib.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-all-1.8.4.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

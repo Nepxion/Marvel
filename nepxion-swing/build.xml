@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<project name="nepxion-swing" default="usage" basedir=".">
+	<property name="src" value="src"/>
+	<property name="asset" value="asset"/>
+	<property name="locale" value="locale"/>
+	<property name="class" value="class"/>
+	<property name="jar" value="nepxion-swing.jar"/>
+	<property name="manifest" value="reference/MANIFEST.MF"/>
+	<property name="dependence.util.path" value="../nepxion-utility/lib"/>
+	<property name="release.path" value="lib"/>
+	<property name="release.application.path" value="../nepxion-swing-demo/release/application"/>
+	<property name="release.applet.path" value="../nepxion-swing-demo/release/applet"/>
+	<property name="encoding" value="gbk"/>
+	<property name="alias" value="security"/>
+	<property name="keystore" value="security.store"/>
+	<property name="storepass" value="888888"/>
+	
+	<path id="classpath">
+		<fileset dir="${dependence.util.path}">
+			<include name="*.jar"/>
+		</fileset>
+		<fileset dir="${release.path}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="usage">
+		<echo message="ant [options]"/>
+		<echo message=""/>
+		<echo message="where options include:"/>
+		<echo message="build  - compile java source code and build with jar"/>
+		<echo message="deploy - build and deploy to demo release path"/>
+		<echo message="clean  - clean all deployments"/>		
+	</target>
+	
+	<target name="build">
+		<delete dir="${class}"/>
+		<mkdir dir="${class}"/>
+		<javac srcdir="${src}" destdir="${class}" target="1.6" encoding="${encoding}" debug="true" debuglevel="source,lines,vars" includeantruntime="on" nowarn="true">
+			<classpath refid="classpath"/>
+			<!-- compilerarg value="-Xlint:unchecked"/ -->
+		</javac>
+		<jar jarfile="${release.path}/${jar}" manifest="${manifest}">
+			<fileset dir="${class}">
+				<include name="**/*.*"/>
+			</fileset>
+			<fileset dir="${asset}">
+				<include name="**/*.*"/>
+			</fileset>
+			<fileset dir="${locale}">
+				<include name="**/*.*"/>
+			</fileset>
+		</jar>
+		<delete dir="${class}"/>
+	</target>
+  
+	<target name="deploy" depends="build">
+		<copy todir="${release.application.path}/lib" preservelastmodified="true">
+			<fileset dir="${release.path}">
+				<include name="*${jar}"/>
+			</fileset>
+		</copy>	
+		<copy todir="${release.applet.path}/lib" preservelastmodified="true">
+			<fileset dir="${release.path}">
+				<include name="*${jar}"/>
+			</fileset>
+		</copy>
+		<signjar alias="${alias}" keystore="${release.applet.path}/sign/${keystore}" storepass="${storepass}" preservelastmodified="true">
+			<fileset dir="${release.applet.path}/lib">
+				<include name="*${jar}"/>
+			</fileset>
+		</signjar>
+	</target>
+  
+	<target name="clean">
+		<delete file="${release.path}/${jar}"/>
+		<delete file="${release.application.path}/lib/${jar}"/>
+		<delete file="${release.applet.path}/lib/${jar}"/>
+	</target>
+</project>

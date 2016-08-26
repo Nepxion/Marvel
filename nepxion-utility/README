@@ -1,0 +1,25 @@
+File list
+===================
+  * [doc]        api document
+  * [lib]        binary library
+  * [locale]     i18n file for en_US and zh_CN
+  * [reference]  MANIFEST.MF packed into the built binary
+  * [src]        source code
+  * [.classpath] eclipse classpath file
+  * [.project]   eclipse project file
+  * [build.xml]  ant build file
+
+Eclipse project
+===================
+  * [1] import project into eclipse
+  * [2] config jre system library for project
+  * [3] config user libraries for project
+        recommend:
+        config user library with name "Nepxion-Util" and add jars in lib
+
+Ant build
+===================
+ant options
+  * [ant build]  compile java source code and build with jar
+  * [ant deploy] build and deploy to demo release path
+  * [ant clean]  clean all deployments

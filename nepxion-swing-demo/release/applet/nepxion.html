@@ -1,0 +1,87 @@
+<html>
+<title>Nepxion Swing</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+<script language="javascript">
+  var handle;
+  
+  function showWord(filePath, readOnly)
+  {
+    var word = new ActiveXObject("Word.Application");
+    word.DisplayAlerts = false;
+    word.Visible = true;
+    word.Documents.Open(filePath, true, readOnly);
+    word.Application.Activate();
+    word = null;
+    handle = window.setInterval("cleanUp()", 1000);
+  }
+  
+  function showExcel(filePath, readOnly)
+  {
+    var excel = new ActiveXObject("Excel.Application");
+    excel.DisplayAlerts = false;
+    excel.Visible = true;
+    excel.Workbooks.Open(filePath, true, readOnly);
+    excel = null;
+    handle = window.setInterval("cleanUp()", 1000);
+  }
+  
+  function showPowerPoint(filePath, readOnly, fullScreen)
+  {
+    var powerPoint = new ActiveXObject("PowerPoint.Application");
+    powerPoint.DisplayAlerts = false;
+    powerPoint.Visible = true;
+    var presentation = powerPoint.Presentations.Open(filePath, readOnly);
+    if (fullScreen)
+    {
+      presentation.SlideShowSettings.Run();
+    }
+    powerPoint = null;
+    handle = window.setInterval("cleanUp()", 1000);
+  }
+  
+  function cleanUp()
+  {
+    window.clearInterval(handle);
+    CollectGarbage();
+  }
+</script>
+</head>
+<body leftmargin="1" rightmargin="0" topmargin="1" bottommargin="0" marginwidth="0" marginheight="0">
+<object classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" codebase="http://java.sun.com/update/1.5.0/jinstall-1_5-windows-i586.cab#Version=5,0,0,3" width="100%" height="100%" mayscript>
+  <param name="code" value="com.nepxion.demo.DemoRibbonApplet.class">
+  <param name="archive" value="lib/nepxion-util.jar,lib/nepxion-swing.jar,lib/nepxion-swing-demo.jar">
+  <param name="type" value="application/x-java-applet;version=1.5">
+  <param name="scriptable" value="true">
+  <param name="progressbar" value="true">
+  <param name="boxmessage" value="UI is initializing, please waiting..."> <!--正在初始化界面，请稍候...-->
+  <param name="boxbgcolor" value="white">
+  <param name="boxfgcolor " value="silver">
+  <param name="progresscolor" value="#C86C12">
+  <param name="windowTitle" value=""> <!--Only for JFullScreenApplet-->
+  <param name="windowIcon" value=""> <!--Only for JFullScreenApplet-->
+    
+  <comment>
+    <embed
+      pluginspage="http://java.sun.com/products/plugin/index.html#download" \
+      width="100%" \
+      height="100%" \
+      code="com.nepxion.demo.DemoApplet.class" \
+      archive="lib/nepxion-util.jar,lib/nepxion-swing.jar,lib/nepxion-swing-demo.jar" \
+      type="application/x-java-applet;version=1.5" \
+      scriptable="true" \
+      progressbar="true" \
+      boxmessage="UI is initializing, please waiting..." \
+      boxbgcolor="white" \
+      boxfgcolor="silver" \
+      progresscolor="#C86C12" \
+      windowTitle="" \
+      windowIcon="" \
+      mayscript>
+      <noembed>
+      </noembed>
+    </embed>
+  </comment>
+</object>
+</body>
+</html>

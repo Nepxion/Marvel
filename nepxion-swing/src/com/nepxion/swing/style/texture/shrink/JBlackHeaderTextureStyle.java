@@ -1,0 +1,41 @@
+package com.nepxion.swing.style.texture.shrink;
+
+/**
+ * <p>Title: Nepxion Swing</p>
+ * <p>Description: Nepxion Swing Repository</p>
+ * <p>Copyright: Copyright (c) 2010</p>
+ * <p>Company: Nepxion</p>
+ * @author Neptune
+ * @email 1394997@qq.com
+ * @version 1.0
+ */
+
+import java.awt.Color;
+
+import com.nepxion.swing.style.texture.basic.JBlackTextureStyle;
+
+public class JBlackHeaderTextureStyle
+	extends JBasicHeaderTextureStyle
+{
+	/**
+	 * The style path.
+	 */
+	public static final String STYLE_PATH = "skin/shrink/black/";
+	
+	/**
+	 * Constructs with the default.
+	 */
+	public JBlackHeaderTextureStyle()
+	{
+		super(JBlackTextureStyle.STYLE_PATH, STYLE_PATH);
+		
+		foreground = new Color(215, 215, 216);
+		selectionForeground = new Color(215, 215, 216);
+		
+		borderColor = new Color(146, 151, 161);
+		
+		contentBackground = new Color(175, 174, 176);
+		
+		separatorColors = new Color[] {new Color(197, 196, 198), new Color(153, 152, 154)};
+	}
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/**|**/CVS/**|**/Thumbs.db" kind="src" path="src"/>
+	<classpathentry excluding="**/.svn/**|**/CVS/**|**/Thumbs.db" kind="src" path="locale"/>
+	<classpathentry excluding="**/.svn/**|**/CVS/**|**/Thumbs.db" kind="src" path="asset"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Nepxion-Utility"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Nepxion-Swing"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/commons-lang-3-3.0-beta.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/http-client-4.0.3.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/http-core-4.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/jacob-1.15.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/jdom-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/json.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/nepxion-util.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/ojdbc14-10g.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/poi-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/proxool-0.9.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/proxool-cglib.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/quartz-all-1.8.4.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Utility/lib/slf4j-log4j12-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/alloy-skin-1.4.4.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/borland-skin-2006.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/itext-asian.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jcalendar-1.3.4.200905090658.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jdesktop-swing-worker-1.2.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jdesktop-swingx-1.0.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jfreechart-1.0.13-experimental.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jfreechart-1.0.13.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jgoodies-forms-1.3.0.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jgoodies-skin-2.1.4.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/jide-oss-2.9.7.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/l2fprod-common-all-7.3.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/native-skin-6.7.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/nepxion-swing.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/tiny-skin.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/trayIcon-1.7.9B.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/vldocking-2.1.5.jar"/>
+	<classpathentry kind="lib" path="/Nepxion-Swing/lib/xp-skin.jar"/>
+	<classpathentry kind="lib" path="lib/twaver-3.7.jar"/>
+	<classpathentry kind="lib" path="lib/twaver-gis-3.7.jar"/>
+	<classpathentry kind="lib" path="lib/twaver-layouter-3.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

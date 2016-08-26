@@ -1,0 +1,22 @@
+                        Nepxion Swing
+                    Version 1.0.0 2011-06-01
+                         Release Notes
+
+See the downloads page for binary and source distributions: http://code.taobao.org/u/Nepxion/
+
+Introduction:
+
+This document contains the release notes for the 1.0.0 version of Nepxion Swing.
+Nepxion Utility is a set of utility functions and reusable components that should be of use in Java environment 1.6.0 aboved.
+
+Release 1.0.0
+===================
+This is the initial version.
+
+Compatibility notes
+-------------------
+Nepxion Swing 1.0.0 requires a minimum of JDK 1.6.0
+
+Changelog
+-------------------
+none

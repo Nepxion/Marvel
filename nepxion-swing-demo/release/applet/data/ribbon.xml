@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--
+  Parameter usage:
+  1. text : "&#x0A;" transforms to "&#x0A;" in HTML
+            "&amp;nbsp;" transforms to "&nbsp;" in HTML
+  2. buttonlayout : [iconTextLayout, alignmentLayout]
+                    "iconTextLayout" provides "HORIZONTAL(value=0)", "VERTICAL(value=1)"
+                    if "iconTextLayout" is "HORIZONTAL"
+                    "alignmentLayout" provides "LEFT(value=2)", "CENTER(value=0)", "RIGHT(value=4)", "LEADING(value=10)", "TRAILING(value=11)"
+                    if "iconTextLayout" is "VERTACAL"
+                    "alignmentLayout" provides "TOP(value=1)", "CENTER(value=0)", "BOTTON(value=3)"
+  3. separator : provides "HORIZONTAL(value=0)", "VERTICAL(value=1)"
+  4. arrowposition (only for JClassicMenuButton) : provides "RIGHT(value=0)", "BOTTOM(value=1)"
+  5. containerstyle : provides "CONTAINER_STYLE_INTERNAL_FRAME(value=0)", "CONTAINER_STYLE_TABBEDPANE(value=1)", "CONTAINER_STYLE_PANEL(value=2)"
+ -->
+<framework>
+  <ribbonnavigator>
+    <ribbonbar title="Button" icon="" tooltip="Button Control" closable="false">
+      <ribbon title="Button Series" icon="" tooltip="Button Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Button" text="Button" largetext="Button&#x0A;&amp;nbsp;" icon="component/button_16.png" largeicon="component/button_32.png" tooltip="Button" class="com.nepxion.demo.control.button.DemoButtonTogglePanel"/>
+        <button name="CheckBox" text="CheckBox" largetext="Check&#x0A;Box" icon="component/check_box_16.png" largeicon="component/check_box_32.png" tooltip="CheckBox" class="com.nepxion.demo.control.button.DemoCheckBoxTogglePanel"/>
+        <button name="RadioButton" text="RadioButton" largetext="Radio&#x0A;Button" icon="component/radio_button_16.png" largeicon="component/radio_button_32.png" tooltip="RadioButton" class="com.nepxion.demo.control.button.DemoRadioButtonTogglePanel"/>
+      </ribbon>
+      <ribbon title="Combo Series" icon="" tooltip="Combo Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="ComboBox" text="ComboBox" largetext="Combo&#x0A;Box" icon="component/combo_box_16.png" largeicon="component/combo_box_32.png" tooltip="ComboBox" class="com.nepxion.demo.control.button.DemoComboBoxTogglePanel"/>
+        <button name="Spinner" text="Spinner" largetext="Spinner&#x0A;&amp;nbsp;" icon="component/spinner_16.png" largeicon="component/spinner_32.png" tooltip="Spinner" class="com.nepxion.demo.control.button.DemoSpinnerTogglePanel"/>
+        <button name="Slider" text="Slider" largetext="Slider&#x0A;&amp;nbsp;" icon="component/slider_16.png" largeicon="component/slider_32.png" tooltip="Slider" class="com.nepxion.demo.control.button.DemoSlideTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Text" icon="" tooltip="Text Control" closable="false">
+      <ribbon title="Label Series" icon="" tooltip="Label Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Label" text="Label" largetext="Label&#x0A;&amp;nbsp;" icon="component/label_16.png" largeicon="component/label_32.png" tooltip="Label" class="com.nepxion.demo.control.text.DemoLabelTogglePanel"/>
+      </ribbon>
+      <ribbon title="TextField Series" icon="" tooltip="TextField Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="TextField" text="TextField" largetext="TextField&#x0A;&amp;nbsp;" icon="component/text_field_16.png" largeicon="component/text_field_32.png" tooltip="TextField" class="com.nepxion.demo.control.text.DemoTextFieldTogglePanel"/>
+        <button name="Formatted TextField" text="Formatted TextField" largetext="Formatted&#x0A;TextField" icon="component/formatted_field_16.png" largeicon="component/formatted_field_32.png" tooltip="Formatted TextField" class="com.nepxion.demo.control.text.DemoFormattedTextFieldTogglePanel"/>
+        <button name="Password Field" text="Password Field" largetext="Password&#x0A;Field" icon="component/password_field_16.png" largeicon="component/password_field_32.png" tooltip="Password Field" class="com.nepxion.demo.control.text.DemoPasswordFieldTogglePanel"/>
+      </ribbon>
+      <ribbon title="TextArea Series" icon="" tooltip="TextArea Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="TextArea" text="TextArea" largetext="Text&#x0A;Area" icon="component/text_area_16.png" largeicon="component/text_area_32.png" tooltip="TextArea" class="com.nepxion.demo.control.text.DemoTextAreaTogglePanel"/>
+        <button name="TextPane" text="TextPane" largetext="Text&#x0A;Pane" icon="component/text_area_16.png" largeicon="component/text_area_32.png" tooltip="TextPane" class="com.nepxion.demo.control.text.DemoTextPaneTogglePanel"/>
+        <button name="EditorPane" text="EditorPane" largetext="Editor&#x0A;Pane" icon="component/editor_pane_16.png" largeicon="component/editor_pane_32.png" tooltip="EditorPane" class="com.nepxion.demo.control.text.DemoEditorPaneTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Menu" icon="" tooltip="Menu Control" closable="false">
+      <ribbon title="Menu Series" icon="" tooltip="Menu Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Menu" text="Menu" largetext="Menu&#x0A;&amp;nbsp;" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="Menu" class="com.nepxion.demo.control.menu.DemoMenuTogglePanel"/>
+        <button name="PopupMenu" text="PopupMenu" largetext="Popup&#x0A;Menu" icon="component/popup_menu_16.png" largeicon="component/popup_menu_32.png" tooltip="PopupMenu" class="com.nepxion.demo.control.menu.DemoPopupMenuTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Border" icon="" tooltip="Border Control" closable="false">
+    </ribbonbar>
+    <ribbonbar title="Container" icon="" tooltip="Container Control" closable="false">
+      <ribbon title="Window Series" icon="" tooltip="Window Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Window" text="Window" largetext="Window&#x0A;&amp;nbsp;" icon="component/internal_frame_16.png" largeicon="component/internal_frame_32.png" tooltip="Window" class="com.nepxion.demo.control.container.DemoWindowTogglePanel"/>
+        <button name="Frame" text="Frame" largetext="Frame&#x0A;&amp;nbsp;" icon="component/framework_16.png" largeicon="component/framework_32.png" tooltip="Frame" class="com.nepxion.demo.control.container.DemoFrameTogglePanel"/>
+        <button name="Dialog" text="Dialog" largetext="Dialog&#x0A;&amp;nbsp;" icon="component/dialog_16.png" largeicon="component/dialog_32.png" tooltip="Dialog" class="com.nepxion.demo.control.container.DemoDialogTogglePanel"/>
+      </ribbon>
+      <ribbon title="Panel Series" icon="" tooltip="Panel Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Panel" text="Panel" largetext="Panel&#x0A;&amp;nbsp;" icon="component/panel_16.png" largeicon="component/panel_32.png" tooltip="Panel" class="com.nepxion.demo.control.container.DemoPanelTogglePanel"/>
+        <button name="ScrollPane" text="ScrollPane" largetext="Scroll&#x0A;Pane" icon="component/scroll_pane_16.png" largeicon="component/scroll_pane_32.png" tooltip="ScrollPane" class="com.nepxion.demo.control.container.DemoScrollPaneTogglePanel"/>
+        <button name="SplitPane" text="SplitPane" largetext="Split&#x0A;Pane" icon="component/split_pane_16.png" largeicon="component/split_pane_32.png" tooltip="SplitPane" class="com.nepxion.demo.control.container.DemoSplitPaneTogglePanel"/>
+        <button name="OptionPane" text="OptionPane" largetext="Option&#x0A;Pane" icon="component/option_pane_16.png" largeicon="component/option_pane_32.png" tooltip="OptionPane" class="com.nepxion.demo.control.container.DemoOptionPaneTogglePanel"/>
+        <button name="TabbedPane" text="TabbedPane" largetext="Tabbed&#x0A;Pane" icon="component/tabbed_pane_16.png" largeicon="component/tabbed_pane_32.png" tooltip="TabbedPane" class="com.nepxion.demo.control.container.DemoTabbedPaneTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Bar" icon="" tooltip="Bar Control" closable="false">
+      <ribbon title="Bar Series" icon="" tooltip="Bar Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="TaskBar" text="TaskBar" largetext="Task&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="TaskBar" class="com.nepxion.demo.control.bar.DemoTaskBarTogglePanel"/>
+        <button name="OutlookBar" text="OutlookBar" largetext="Outlook&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="OutlookBar" class="com.nepxion.demo.control.bar.DemoOutlookBarTogglePanel"/>
+        <button name="ButtonBar" text="ButtonBar" largetext="Button&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="ButtonBar" class="com.nepxion.demo.control.bar.DemoButtonBarTogglePanel"/>
+        <button name="ToolBar" text="ToolBar" largetext="Tool&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="ToolBar" class="com.nepxion.demo.control.bar.DemoToolBarTogglePanel"/>
+        <button name="MenuBar" text="MenuBar" largetext="Menu&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="MenuBar" class="com.nepxion.demo.control.bar.DemoMenuBarTogglePanel"/>
+        <button name="StatusBar" text="StatusBar" largetext="Status&#x0A;Bar" icon="component/tool_bar_16.png" largeicon="component/tool_bar_32.png" tooltip="StatusBar" class="com.nepxion.demo.control.bar.DemoStatusBarTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Data" icon="" tooltip="Data Control" closable="false">
+      <ribbon title="Data Series" icon="" tooltip="Data Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Tree" text="Tree" largetext="Tree&#x0A;&amp;nbsp;" icon="component/tree_16.png" largeicon="component/tree_32.png" tooltip="Tree" class="com.nepxion.demo.control.data.DemoTreeTogglePanel"/>
+        <button name="Table" text="Table" largetext="Table&#x0A;&amp;nbsp;" icon="component/table_16.png" largeicon="component/table_32.png" tooltip="Table" class="com.nepxion.demo.control.data.DemoTableTogglePanel"/>        
+        <button name="List" text="List" largetext="List&#x0A;&amp;nbsp;" icon="component/list_16.png" largeicon="component/list_32.png" tooltip="List" class="com.nepxion.demo.control.data.DemoListTogglePanel"/>        
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Selector" icon="" tooltip="Selector Control" closable="false">
+      <ribbon title="Calendar Series" icon="" tooltip="Calendar Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Calendar" text="Calendar" largetext="Calendar&#x0A;Selector" icon="component/calendar_16.png" largeicon="component/calendar_32.png" tooltip="Calendar Selector" class="com.nepxion.demo.control.selector.DemoCalendarSelectorTogglePanel"/>
+      </ribbon>
+      <ribbon title="Locale Series" icon="" tooltip="Locale Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Locale" text="Locale" largetext="Locale&#x0A;Selector" icon="component/locale_16.png" largeicon="component/locale_32.png" tooltip="Locale Selector" class="com.nepxion.demo.control.selector.DemoLocaleSelectorTogglePanel"/>
+      </ribbon>
+      <ribbon title="File Series" icon="" tooltip="File Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="File" text="File" largetext="File&#x0A;Selector" icon="component/file_chooser_16.png" largeicon="component/file_chooser_32.png" tooltip="File Selector" class="com.nepxion.demo.control.selector.DemoFileSelectorTogglePanel"/>
+      </ribbon>
+      <ribbon title="Color Series" icon="" tooltip="Color Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Color" text="Color" largetext="Color&#x0A;Selector" icon="component/color_chooser_16.png" largeicon="component/color_chooser_32.png" tooltip="Color Selector" class="com.nepxion.demo.control.selector.DemoColorSelectorTogglePanel"/>
+      </ribbon>
+      <ribbon title="Button Series" icon="" tooltip="Button Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="DropDown" text="DropDown" largetext="DropDown&#x0A;Selector" icon="component/popup_menu_16.png" largeicon="component/popup_menu_32.png" tooltip="DropDown Selector" class="com.nepxion.demo.control.selector.DemoDropDownSelectorTogglePanel"/>
+        <button name="CheckBox" text="CheckBox" largetext="CheckBox&#x0A;Selector" icon="component/check_box_16.png" largeicon="component/check_box_32.png" tooltip="CheckBox Selector" class="com.nepxion.demo.control.selector.DemoCheckBoxSelectorTogglePanel"/>
+        <button name="RadioButton" text="RadioButton" largetext="RadioButton&#x0A;Selector" icon="component/radio_button_16.png" largeicon="component/radio_button_32.png" tooltip="RadioButton Selector" class="com.nepxion.demo.control.selector.DemoRadioButtonSelectorTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Layout" icon="" tooltip="Layout Control" closable="false">
+      <ribbon title="Layout Series" icon="" tooltip="Layout Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Table Layout" text="Table Layout" largetext="Table&#x0A;Layout" icon="component/layout_32.png" largeicon="component/layout_32.png" tooltip="Table Layout" class="com.nepxion.demo.control.layout.DemoTableLayoutTogglePanel"/>
+        <button name="Filed Layout" text="Filed Layout" largetext="Filed&#x0A;Layout" icon="component/layout_32.png" largeicon="component/layout_32.png" tooltip="Filed Layout" class="com.nepxion.demo.control.layout.DemoFiledLayoutTogglePanel"/>
+        <button name="Ratio Layout" text="Ratio Layout" largetext="Ratio&#x0A;Layout" icon="component/layout_32.png" largeicon="component/layout_32.png" tooltip="Ratio Layout" class="com.nepxion.demo.control.layout.DemoRatioLayoutTogglePanel"/>
+        <button name="XBorder Layout" text="XBorder Layout" largetext="XBorder&#x0A;Layout" icon="component/layout_32.png" largeicon="component/layout_32.png" tooltip="XBorder Layout" class="com.nepxion.demo.control.layout.DemoXBorderLayoutTogglePanel"/>
+        <button name="XBox Layout" text="XBox Layout" largetext="XBox&#x0A;Layout" icon="component/layout_32.png" largeicon="component/layout_32.png" tooltip="XBox Layout" class="com.nepxion.demo.control.layout.DemoXBoxLayoutTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="UI" icon="" tooltip="UI Control" closable="false">
+      <ribbon title="UI Defaults Series" icon="" tooltip="UI Defaults Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="UI Defaults" text="UI Defaults" largetext="UI Defaults&#x0A;Explorer" icon="component/ui_16.png" largeicon="component/ui_32.png" tooltip="UI Defaults" class="com.nepxion.demo.control.ui.DemoUIDefaultsTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Thread" icon="" tooltip="Thread Control" closable="false">
+      <ribbon title="Thread Series" icon="" tooltip="Thread Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Thread" text="Thread" largetext="Thread&#x0A;&amp;nbsp;" icon="component/thread_16.png" largeicon="component/thread_32.png" tooltip="Thread" class="com.nepxion.demo.control.thread.DemoThreadTogglePanel"/>
+        <button name="Timer" text="Timer" largetext="Timer&#x0A;&amp;nbsp;" icon="component/thread_16.png" largeicon="component/thread_32.png" tooltip="Timer" class="com.nepxion.demo.control.thread.DemoTimerTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Chart" icon="" tooltip="Chart Control" closable="false">
+      <ribbon title="Chart Series" icon="" tooltip="Chart Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Pie Chart" text="PieChart" largetext="Pie&#x0A;Chart" icon="component/chart_pie_16.png" largeicon="component/chart_pie_32.png" tooltip="PieChart" class="com.nepxion.demo.control.chart.DemoPieChartTogglePanel"/>
+        <button name="Bar Chart" text="BarChart" largetext="Bar&#x0A;Chart" icon="component/chart_bar_16.png" largeicon="component/chart_bar_32.png" tooltip="BarChart" class="com.nepxion.demo.control.chart.DemoBarChartTogglePanel"/>
+        <button name="Line Chart" text="LineChart" largetext="Line&#x0A;Chart" icon="component/chart_line_16.png" largeicon="component/chart_line_32.png" tooltip="LineChart" class="com.nepxion.demo.control.chart.DemoLineChartTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="FrameWork" icon="" tooltip="FrameWork Control" closable="false">
+      <ribbon title="FrameWork Series" icon="" tooltip="FrameWork Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="Dockable" text="Dockable" largetext="Dockable&#x0A;FrameWork" icon="component/framework_16.png" largeicon="component/framework_32.png" tooltip="Dockable FrameWork" class="com.nepxion.demo.control.framework.DemoDockableFrameWorkTogglePanel"/>
+        <button name="Ribbon" text="Ribbon" largetext="Ribbon&#x0A;FrameWork" icon="component/framework_16.png" largeicon="component/framework_32.png" tooltip="Ribbon FrameWork" class=""/>
+        <button name="VLDocking" text="VLDocking" largetext="VLDocking&#x0A;FrameWork" icon="component/framework_16.png" largeicon="component/framework_32.png" tooltip="VLDocking FrameWork" class=""/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Advanced" icon="" tooltip="Advanced Control" closable="false">  
+    </ribbonbar>
+    <ribbonbar title="Application" icon="" tooltip="Application Control" closable="false">
+      <ribbon title="Application Series" icon="" tooltip="Application Series" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <button name="GIS" text="GIS" largetext="地理信息&#x0A;查询" icon="component/application_16.png" largeicon="component/application_32.png" tooltip="GIS" class="com.nepxion.demo.control.application.DemoGisTogglePanel"/>
+        <button name="IP" text="IP" largetext="IP信息&#x0A;查询" icon="component/framework_16.png" largeicon="component/application_32.png" tooltip="IP" class="com.nepxion.demo.control.application.DemoIPTogglePanel"/>
+        <button name="ID" text="ID" largetext="身份证信息&#x0A;查询" icon="component/application_16.png" largeicon="component/application_32.png" tooltip="ID" class="com.nepxion.demo.control.application.DemoIDTogglePanel"/>
+        <button name="Mobile" text="Mobile" largetext="手机信息&#x0A;查询" icon="component/application_16.png" largeicon="component/application_32.png" tooltip="Mobile" class="com.nepxion.demo.control.application.DemoMobileTogglePanel"/>
+        <button name="Zone" text="Zone" largetext="区号信息&#x0A;查询" icon="component/application_16.png" largeicon="component/application_32.png" tooltip="Zone" class="com.nepxion.demo.control.application.DemoZoneTogglePanel"/>
+      </ribbon>
+    </ribbonbar>
+    <ribbonbar title="Ribbon - Xml" icon="" tooltip="Ribbon Control" closable="false">
+      <ribbon title="Ribbon" icon="" tooltip="Ribbon" layout="" buttonlayout="1, 0" buttoninsets="8, 2, 8, 2">
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="1">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+          <separator/>
+          <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+            <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	      <separator/>
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	    </menu>
+      	    <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	      <separator/>
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	    </menu>
+      	  </menu>
+        </menubutton>
+        <separator orientation="1"/>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="1">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	  <separator/>
+      	  <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+      	    <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	      <separator/>
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	    </menu>
+      	    <menu text="Menu" icon="component/menu_16.png" tooltip="Menu">
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	      <separator/>
+      	      <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+      	    </menu>
+      	  </menu>
+        </menubutton>
+      </ribbon>
+      <ribbon title="Ribbon" icon="" tooltip="Ribbon" layout="TableLayout({-1, -1}, {-1, 10, -1})" buttonlayout="0, 0" buttoninsets="0, 0, 0, 0">
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="0" constraints="0, 0">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="0" constraints="0, 2">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+        <separator orientation="0" constraints="0, 1, 1, 1"/>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="0" constraints="1, 0">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" largeicon="component/menu_32.png" tooltip="MenuButton" arrowposition="0" constraints="1, 2">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+      </ribbon>
+      <ribbon title="Ribbon" icon="" tooltip="Ribbon" layout="TableLayout({90, 80, 70}, {-1, -1, -1})" buttonlayout="0, 4" buttoninsets="0, 0, 0, 0">
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="0, 0" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="0, 1" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="0, 2" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="1, 0" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="1, 1" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="1, 2" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="2, 0" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="2, 1" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="2, 2" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>      
+      </ribbon>
+      <ribbon title="Ribbon" icon="" tooltip="Ribbon" layout="TableLayout({-1, -1, -1}, {-1, -1, -1})" buttonlayout="0, 2" buttoninsets="0, 0, 0, 0">
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="0, 0" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" tooltip="MenuButton" arrowposition="0" constraints="0, 1, 0, 2">
+      	  <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" tooltip="MenuButton" arrowposition="1" constraints="1, 0, 1, 2">
+          <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+        <button name="Button" text="Button" icon="component/button_16.png" tooltip="Button" constraints="2, 0" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        <menubutton name="MenuButton" text="MenuButton" largetext="Menu&#x0A;Button" icon="component/menu_16.png" tooltip="MenuButton" arrowposition="0" constraints="2, 1, 2, 2">
+          <menuitem name="MenuItem" text="MenuItem" icon="component/menu_item_16.png" tooltip="MenuItem" class="com.nepxion.swing.framework.ribbon.DefaultRibbonComponent"/>
+        </menubutton>
+      </ribbon>
+    </ribbonbar>
+  </ribbonnavigator>
+  <ribboncontainer containerstyle="0" maximumcount="100">
+  </ribboncontainer>
+</framework>

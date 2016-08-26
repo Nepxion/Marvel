@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Class-Path: util/commons-lang-3-3.0-beta.jar util/commons-logging-1.1.1.jar util/dom4j-1.6.1.jar util/http-client-4.0.3.jar util/http-core-4.1.jar util/jdom-1.1.1.jar util/json.jar util/junit-4.8.2.jar util/log4j-1.2.16.jar util/ojdbc14-10g.jar util/poi-3.7-20101029.jar util/proxool-0.9.1.jar util/proxool-cglib.jar util/quartz-all-1.8.4.jar util/servlet-api.jar util/slf4j-api-1.6.1.jar util/slf4j-log4j12-1.6.1.jar

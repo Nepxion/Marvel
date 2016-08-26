@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="4.3.1" transformSequenceNumber="1">
+  <directoryPresets config="./lib/swing/native" />
+  <application name="Nepxion Swing" distributionSourceDir="../">
+    <languages>
+      <principalLanguage id="en" customLocalizationFile="" />
+    </languages>
+  </application>
+  <executable name="ribbon" type="1" iconSet="true" iconFile="ribbon.ico" executableDir="." redirectStderr="true" stderrFile="logger.log" stderrMode="overwrite" redirectStdout="false" stdoutFile="output.log" stdoutMode="overwrite" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="" executionLevel="asInvoker" checkConsoleParameter="false" amd64="false">
+    <messageSet />
+    <versionInfo include="true" fileVersion="" fileDescription="Nepxion Swing Repository" legalCopyright="" internalName="任浩军" productName="" companyName="Nepxion" productVersion="1.0" />
+  </executable>
+  <splashScreen show="false" autoOff="true" alwaysOnTop="true" width="367" height="263" bitmapFile="" java6SplashScreen="false">
+    <text>
+      <statusLine x="20" y="20" text="" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+      <versionLine x="20" y="40" text="version %VERSION%" font="Arial" fontSize="8" fontColor="0,0,0" fontWeight="500" />
+    </text>
+  </splashScreen>
+  <java mainClass="com.nepxion.demo.DemoRibbonFrame" vmParameters="-Dfile.encoding=GBK -Ddefault.client.encoding=GBK -Duser.language=zh -Duser.region=CN -Djava.security.policy=java.policy -Xms128m -Xmx512m" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true" minVersion="1.6" maxVersion="1.7" allowBetaVM="true" jdkOnly="false">
+    <searchSequence>
+      <envVar name="JAVA_HOME" />
+      <registry />
+    </searchSequence>
+    <classPath>
+      <archive location="./lib/util/jacob-1.15.jar" failOnError="false" />
+      <archive location="./lib/nepxion-util.jar" failOnError="false" />
+      <archive location="./lib/nepxion-swing.jar" failOnError="false" />
+      <archive location="./lib/nepxion-swing-demo.jar" failOnError="false" />
+      <directory location="./conf" failOnError="false" />
+      <directory location="./data" failOnError="false" />
+    </classPath>
+    <nativeLibraryDirectories>
+      <directory name="./lib/util/native" />
+      <directory name="./lib/swing/native" />
+    </nativeLibraryDirectories>
+  </java>
+  <includedFiles />
+  <unextractableFiles />
+</exe4j>
+
