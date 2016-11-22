@@ -100,7 +100,7 @@ public class DemoRibbonNavigatorBar
 			{
 				try
 				{
-					ActiveXManager.callWeb(null, "http://code.taobao.org/u/Nepxion/");
+					ActiveXManager.callWeb(null, "https://github.com/Nepxion/");
 				}
 				catch (Exception ex)
 				{
