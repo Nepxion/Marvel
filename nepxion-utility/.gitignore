@@ -23,5 +23,5 @@ test-output/
 .gradle/
 .settings/
 target/
+bin/
 hs_err_pid*
-
