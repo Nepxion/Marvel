@@ -1,4 +1,4 @@
 # Nepxion Marvel
-[![Apache License 2](https://img.shields.io/badge/license-ASF2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Nepxion/Marvel/blob/master/LICENSE)
 
 Nepxion Marvel是一款基于Java Swing的Ribbon Desktop框架应用，用于通信，电信，移动快速开发的元模型架构
