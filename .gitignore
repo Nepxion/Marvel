@@ -2,7 +2,6 @@
 *.class
 .classpath
 .springBeans
-.factorypath
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -10,7 +9,6 @@
 *.classpath
 *.project
 *.springBeans
-bin/
 log/
 test-output/
 
