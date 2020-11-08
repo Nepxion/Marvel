@@ -9,5 +9,4 @@ Nepxion Marvel是一款基于Java Swing的Ribbon Desktop框架应用，用于通
 ![](http://nepxion.gitee.io/docs/zxing-doc/微信-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/公众号-1.jpg)![](http://nepxion.gitee.io/docs/zxing-doc/文档-1.jpg)
 
 ## Star走势图
-
 [![Stargazers over time](https://starchart.cc/Nepxion/Marvel.svg)](https://starchart.cc/Nepxion/Marvel)
